@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#036635"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtamountofcoffee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount of Coffee:"
+        android:textSize="25sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/numberofcoffee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textSize="25sp"
+        android:textColor="#FFFFFF"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/txtamountofcoffee"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btnminus"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="-"
+        android:textSize="20sp"
+        android:textColor="#036635"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/txtamountofcoffee"
+        android:layout_toLeftOf="@+id/numberofcoffee"
+        android:backgroundTint="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/btnadd"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="+"
+        android:textSize="20sp"
+        android:textColor="#036635"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/txtamountofcoffee"
+        android:layout_toRightOf="@+id/numberofcoffee"
+        android:backgroundTint="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/txttoppings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toppings:"
+        android:textSize="23sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/numberofcoffee"
+        android:layout_marginStart="20dp"/>
+
+    <CheckBox
+        android:id="@+id/cbcream"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cream ($1)"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@+id/txttoppings"
+        android:buttonTint="#FFFFFF"/>
+
+    <CheckBox
+        android:id="@+id/cbcookieflakes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cookie Flakes($2)"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@+id/cbcream"
+        android:buttonTint="#FFFFFF"/>
+
+    <CheckBox
+        android:id="@+id/cbchocolatechip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chocolate Chip ($3)"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@+id/cbcookieflakes"
+        android:buttonTint="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/btnmakeorder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Make Order"
+        android:textSize="25sp"
+        android:textColor="#036635"
+        android:textAllCaps="false"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/cbchocolatechip"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/totalprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/btnmakeorder"/>
+
+</RelativeLayout>

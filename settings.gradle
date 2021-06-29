@@ -1,0 +1,2 @@
+rootProject.name = "NewEraMay2021"
+include ':app'
