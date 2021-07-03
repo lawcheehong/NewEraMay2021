@@ -11,17 +11,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NewEraMay2021">
-        <activity android:name=".recycleview.RecycleViewActivity"></activity>
-        <activity android:name=".listview.Contact"></activity>
-        <activity android:name=".listview.SimpleListviewActivity">
+        <activity android:name=".studentrecycleview.StudentlistActivity">
             <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".InfoActivity"></activity>
-        <activity android:name=".OrderActivity"></activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".recycleview.RecycleViewActivity" />
+        <activity android:name=".listview.Contact" />
+        <activity android:name=".listview.SimpleListviewActivity"></activity>
+        <activity android:name=".InfoActivity" />
+        <activity android:name=".OrderActivity" />
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

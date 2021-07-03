@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/imgStudent"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_margin="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvmatricnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DCS12345"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tvstudentname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Law"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tvcoursename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diploma in Computer Science"
+            android:textSize="20sp"/>
+    </LinearLayout>
+</LinearLayout>
