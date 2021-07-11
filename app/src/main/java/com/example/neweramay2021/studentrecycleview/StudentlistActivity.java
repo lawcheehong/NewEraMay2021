@@ -41,7 +41,7 @@ public class StudentlistActivity extends AppCompatActivity {
 
     private void initAdapterViews(){
         Request request = new Request.Builder()
-                .url("https://api.jsonbin.io/b/5f2773c81823333f8f1afec3")
+                .url("https://api.jsonbin.io/b/5f2773c81823333f8f1afec3/1")
                 .build();
 
         client.newCall(request).enqueue(new Callback() {
